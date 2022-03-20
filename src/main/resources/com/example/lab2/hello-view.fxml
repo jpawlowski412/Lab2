@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="231.0" prefWidth="305.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="231.0" prefWidth="305.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab2.HelloController">
    <children>
-      <Button layoutX="92.0" layoutY="96.0" mnemonicParsing="false" text="Kliknij mnie!" textFill="#c90b0b">
+      <Button fx:id="btnMain" layoutX="92.0" layoutY="139.0" mnemonicParsing="false" onAction="#onBtnAction" text="Kliknij mnie!" textFill="#c90b0b">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
+      <TextField fx:id="txtLicznik" layoutX="53.0" layoutY="40.0" onAction="#onBtnAction" prefHeight="67.0" prefWidth="199.0" />
    </children>
 </AnchorPane>

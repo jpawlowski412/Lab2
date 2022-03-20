@@ -1,14 +1,17 @@
 package com.example.lab2;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.event.ActionEvent;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
+    public Button btnMain;
+    public TextField txtLicznik;
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    int clickCounter=0;
+    public void onBtnAction(ActionEvent actionEvent) {
+        txtLicznik.setText("kliknięcie nr " + ++clickCounter);
+        if (clickCounter == 1)
+            btnMain.setText("i jeszcze raz");
     }
 }
